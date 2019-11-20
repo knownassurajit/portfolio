@@ -9,7 +9,7 @@ This is not only for my use. You can clone it & modify it for your own use.
 * This project contains HTML5, CSS3, jQuery, JavaScript, Sass.
 * Anyone can modify this project. I'll be happy if you contribute your creativity with me.
 * This is totally open-source. So, don't hesitate & take a look.
-* [Resume](https://surajithere.github.io/Resume/)
+* [Resume](https://surajithere.github.io/resume/)
 
 ## Contributing
 
