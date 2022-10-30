@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    place-content: center;
+    display: grid;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+.box {
+    position: relative;
+    background: rgb(255, 255, 255);
+    border-radius: .5em;
+    padding: 3em;
+    width: 250px;
+}
+
+.box::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+    filter: blur(20px);
+    transform: translate3d(0px, 20px, 0);
+    border-radius: inherit;
+}
+
+.box::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /*
+    background: linear-gradient(-45deg, #5020d3 0%, #20a87f 100%);
+    filter: blur(20px);
+    transform: translate3d(0px, 20px, 0);
+    */
+    border-radius: inherit;
+}
