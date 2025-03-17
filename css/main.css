@@ -1,49 +1,157 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Roboto', sans-serif; /* Updated font-family */
+}
+
+:root {
+    --primary: #2A2A2A;
+    --secondary: #6C757D;
+    --accent: #22559c;
+}
+
 body {
-    margin: 0;
-    place-content: center;
+    line-height: 1.6;
+    color: var(--primary);
+    font-family: 'Lato', 'Roboto', sans-serif; /* Updated font-family */
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section {
+    padding: 5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Header */
+.hero {
+    text-align: center;
+    padding: 8rem 0;
+    background: #f8f9fa;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+    font-family: 'Playfair Display', serif; /* Updated font-family */
+}
+
+/* Services Grid */
+.services-grid {
     display: grid;
-    height: 100vh;
-    font-family: 'Red Hat Display', sans-serif;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-h1 {
-    margin: 0;
+.service-card {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.box {
+/* Timeline */
+.timeline {
+    border-left: 2px solid var(--accent);
+    padding-left: 2rem;
+    margin: 3rem 0;
+}
+
+.timeline-item {
+    margin-bottom: rem;
     position: relative;
-    background: rgb(255, 255, 255);
-    border-radius: .5em;
-    padding: 3em;
-    width: 250px;
 }
 
-.box::before {
+.timeline-item::before {
+    content: '';
     position: absolute;
-    z-index: -1;
-    content: "";
+    left: -2.54rem;
     top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
-    filter: blur(20px);
-    transform: translate3d(0px, 20px, 0);
-    border-radius: inherit;
+    width: 15px;
+    height: 15px;
+    background: var(--accent);
+    border-radius: 50%;
 }
 
-.box::after {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    /*
-    background: linear-gradient(-45deg, #5020d3 0%, #20a87f 100%);
-    filter: blur(20px);
-    transform: translate3d(0px, 20px, 0);
-    */
-    border-radius: inherit;
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Contact */
+.contact-cta {
+    text-align: center;
+    background: var(--accent);
+    color: white;
+    padding: 4rem 0;
+}
+
+.contact-button {
+    background-color: white;
+    color: var(--accent);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: #e0e0e0;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: underline;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    background: var(--primary);
+    color: white;
+}
+
+.social-links {
+    margin: 1rem 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
 }
