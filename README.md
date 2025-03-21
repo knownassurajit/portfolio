@@ -14,13 +14,13 @@ This project is built using modern web technologies and design principles. Below
 ### Technologies Used
 <div style="background-color:rgba(250, 250, 250, 0.05); padding: 20px; border-radius: 4px;">
 
-- <span style="color: #E64A19;">**HTML5**</span>: For structuring the content of the website.
-- <span style="color: #0097A7;">**CSS3**</span>: For styling the website, including layout, colors, and fonts.
-- <span style="color: #FFA000;">**JavaScript**</span>: For adding interactivity to the website.
-- <span style="color: #7B1FA2;">**jQuery**</span>: A fast, small, and feature-rich JavaScript library.
-- <span style="color: #C2185B;">**Sass**</span>: A preprocessor scripting language that is interpreted or compiled into CSS.
-- <span style="color:rgb(1, 146, 213);">**Font Awesome**</span>: For adding scalable vector icons.
-- <span style="color: #00897B;">**Google Fonts**</span>: For custom fonts used in the website.
+- <img src="https://www.flaticon.com/free-icon/html-5_5968267" width="16" height="16"> <span style="color: #E64A19;">**HTML5**</span>: For structuring the content of the website.
+- <img src="https://www.flaticon.com/free-icon/css-3_5968242" width="16" height="16"> <span style="color: #0097A7;">**CSS3**</span>: For styling the website, including layout, colors, and fonts.
+- <img src="https://www.flaticon.com/free-icon/js_5968292" width="16" height="16"> <span style="color: #FFA000;">**JavaScript**</span>: For adding interactivity to the website.
+- <img src="https://www.flaticon.com/free-icon/jquery_5968672" width="16" height="16"> <span style="color: #7B1FA2;">**jQuery**</span>: A fast, small, and feature-rich JavaScript library.
+- <img src="https://www.flaticon.com/free-icon/sass_5968358" width="16" height="16"> <span style="color: #C2185B;">**Sass**</span>: A preprocessor scripting language that is interpreted or compiled into CSS.
+- <img src="https://www.flaticon.com/free-icon/font-awesome_889155" width="16" height="16"> <span style="color:rgb(1, 146, 213);">**Font Awesome**</span>: For adding scalable vector icons.
+- <img src="https://www.flaticon.com/free-icon/google-fonts_5968517" width="16" height="16"> <span style="color: #00897B;">**Google Fonts**</span>: For custom fonts used in the website.
 
 </div>
 
