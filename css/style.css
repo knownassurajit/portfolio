@@ -72,7 +72,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    background: linear-gradient(135deg, #2A2E35 0%, #1E1E24 100%);
     position: relative;
     overflow: hidden;
     padding: 140px 0;
@@ -110,27 +110,37 @@ body {
 
 .hero-name .first-name {
     font-family: 'DM Sans', 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 1000;
     font-size: 4rem;
     letter-spacing: 2px;
-    color: var(--surface);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #64B6AC, #C0FDFB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
 }
 
 .hero-name .last-name {
     font-family: 'DM Sans', 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 100;
     font-size: 4rem;
     letter-spacing: 2px;
-    color: var(--surface);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #64B6AC, #C0FDFB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
 }
 
 .hero-title {
-    font-size: 1.5rem;
+    color: #ffffff;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 1px;
+}
+
+.hero p {
+    color: #B2B2B2;
+    font-size: 1.2rem;
 }
 
 /* Expertise Section */
@@ -255,31 +265,61 @@ body {
 
 /* Contact CTA */
 .contact-cta {
-    background: var(--primary-dark);
-    color: var(--white);
+    background: linear-gradient(135deg, #2A2E35 0%, #1E1E24 100%);
     padding: 80px 0;
     text-align: center;
-    box-shadow: var(--elevation-1);
+    color: #ffffff;
+}
+
+.contact-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #64B6AC, #C0FDFB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-cta p {
+    color: #B2B2B2;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .contact-button {
     display: inline-block;
-    padding: 15px 30px;
-    background: var(--accent);
-    color: var(--surface);
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #64B6AC, #5591A9);
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 30px;
     font-weight: 500;
-    border: none;
-    box-shadow: var(--elevation-1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.contact-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
 }
 
 .contact-button:hover {
-    background: var(--primary-dark);
-    box-shadow: var(--elevation-2);
-    transform: translateY(-2px) scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(100,182,172,0.4);
+}
+
+.contact-button:hover:before {
+    left: 100%;
+}
+
+.contact-button:active {
+    transform: scale(0.95);
 }
 
 /* Footer */
