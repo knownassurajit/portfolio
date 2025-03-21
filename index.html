@@ -4,73 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surajit Das | Portfolio</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Updated Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
     <header class="hero">
         <div class="container">
-            <h1>Building Digital Solutions Through Data & Design</h1>
-            <p>Database Engineer & UX Designer</p>
+            <div class="hero-content">
+                <div class="hero-name">
+                    <span class="first-name">SURAJIT</span>
+                    <span class="last-name">DAS</span>
+                </div>
+                <p class="hero-title">Database Specialist & Backend Engineer</p>
+                <p>Specializing in PL/SQL Development, Cloud Architecture & UX Design</p>
+            </div>
         </div>
     </header>
 
     <!-- Expertise Section -->
-    <section class="section">
+    <section class="section expertise">
         <div class="container">
-            <h2>Expertise</h2>
+            <h2>Core Expertise</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Database Engineering</h3>
-                    <p>PL/SQL, PostgreSQL, MySQL, Oracle, Cloud Migrations</p>
+                    <span class="material-icons">storage</span>
+                    <h3>Backend & Database Engineering</h3>
+                    <p>PL/SQL • Oracle • PostgreSQL • MySQL • Database Migration • Performance Tuning</p>
                 </div>
                 <div class="service-card">
-                    <h3>UX Design</h3>
-                    <p>User Research, Wireframing, Prototyping, Figma</p>
+                    <span class="material-icons">design_services</span>
+                    <h3>UX & System Design</h3>
+                    <p>System Architecture • Wireframing • User Research • Figma • Interface Design</p>
                 </div>
                 <div class="service-card">
-                    <h3>Full Stack Development</h3>
-                    <p>Python, SQL, CI/CD, API Design, Data Visualization</p>
+                    <span class="material-icons">settings_suggest</span>
+                    <h3>Automation & DevOps</h3>
+                    <p>CI/CD • Cloud Infrastructure • AWS • Docker • Jenkins • Automated Testing</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section class="section">
+    <section class="section experience">
         <div class="container">
-            <h2>Experience</h2>
+            <h2>Professional Journey</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h3>Database Engineer @ Adapt Ready</h3>
-                    <p>Nov 2021 - Present</p>
+                    <img src="images/adapt-ready-logo.png" alt="Adapt Ready" class="company-logo">
+                    <h3>Database Engineer</h3>
+                    <h4>Adapt Ready</h4>
+                    <p class="duration">Nov 2021 - Present</p>
                     <ul>
-                        <li>Led complex database migrations</li>
-                        <li>Optimized query performance by 25%</li>
+                        <li>Led complex database migrations reducing operational costs by 20%</li>
+                        <li>Optimized query performance resulting in 25% faster data retrieval</li>
+                        <li>Implemented automated backup solutions reducing manual effort by 80%</li>
                     </ul>
                 </div>
-                <!-- Add other timeline items -->
+                <div class="timeline-item">
+                    <h3>Systems Engineer</h3>
+                    <h4>Tata Consultancy Services (TCS BaNCS)</h4>
+                    <p class="duration">Jul 2020 - Oct 2021</p>
+                    <ul>
+                        <li>Developed and maintained banking solutions using PL/SQL</li>
+                        <li>Improved system performance through query optimization</li>
+                    </ul>
+                </div>
+                <!-- Additional experience items -->
             </div>
         </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section class="section">
+    <!-- Projects Section -->
+    <section class="section projects">
         <div class="container">
             <h2>Featured Projects</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Cloud Migration System</h3>
-                    <p>20% cost reduction through optimized strategies</p>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="tech-icons">
+                        <i class="fab fa-aws"></i>
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Enterprise Cloud Migration</h3>
+                    <p>Architected and implemented cloud migration strategy resulting in 20% cost reduction</p>
+                    <div class="tech-stack">AWS • Oracle • PostgreSQL</div>
                 </div>
-                <div class="skill-card">
-                    <h3>Automated Backup Solution</h3>
-                    <p>80% reduction in manual effort</p>
+                <div class="project-card">
+                    <h3>Facial Expression Recognition</h3>
+                    <p>ML-powered system achieving 95% accuracy in emotion detection</p>
+                    <div class="tech-stack">Python • TensorFlow • OpenCV</div>
                 </div>
-                <!-- Add other projects -->
+                <div class="project-card">
+                    <h3>Limit Order Book System</h3>
+                    <p>High-performance trading system handling 1000+ transactions per second</p>
+                    <div class="tech-stack">C++ • Redis • PostgreSQL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Education -->
+    <section class="section credentials">
+        <div class="container">
+            <h2>Certifications & Education</h2>
+            <div class="credentials-grid">
+                <div class="certifications">
+                    <h3>Professional Certifications</h3>
+                    <div class="cert-item">
+                        <span class="material-icons">cloud_done</span>
+                        <h4>Google Cloud Professional Database Engineer</h4>
+                        <p>Issued by Google Cloud</p>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fab fa-ibm"></i>
+                        <h4>IBM Database Administration Specialist</h4>
+                        <p>Issued by IBM</p>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Stanford Machine Learning</h4>
+                        <p>Coursera - Stanford University</p>
+                    </div>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="edu-item">
+                        <h4>B.Tech in Computer Science</h4>
+                        <p>University of Engineering & Management, Jaipur</p>
+                        <p class="year">2016 - 2020</p>
+                        <p>CGPA: 8.5/10</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -88,10 +157,11 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/knownassurajit/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.github.com/knownassurajit"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/knownassurajit/"><span class="material-icons">linkedin</span></a>
+                <a href="https://www.github.com/knownassurajit"><span class="material-icons">code</span></a>
                 <a href="https://www.instagram.com/knownassurajit"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.x.com/knownassurajit"><i class="fab fa-twitter"></i></a>
+                <a href="https://surajitdas.com"><i class="fas fa-globe"></i></a>
             </div>
             <p>© 2025 Surajit Das. All rights reserved.</p>
         </div>
