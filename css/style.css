@@ -22,6 +22,10 @@
     --section-divide: #E8ECF0;
     --elevation-1: 0 2px 4px rgba(45, 54, 67, 0.08);
     --elevation-2: 0 4px 8px rgba(45, 54, 67, 0.12);
+    --font-heading: 'Noto Serif Display', serif;
+    --font-primary: 'Lato', 'Prata', serif;
+    --font-hero: 'Boldonse', 'Poppins', sans-serif;
+    --font-secondary: 'Mulish', sans-serif;
 }
 
 /* Add animations */
@@ -56,7 +60,7 @@
 
 /* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--text-primary);
     margin: 0;
@@ -105,6 +109,7 @@ body {
 }
 
 .hero-name {
+    font-family: var(--font-hero);
     margin-bottom: 1rem;
 }
 
@@ -131,6 +136,7 @@ body {
 }
 
 .hero-title {
+    font-family: var(--font-secondary);
     color: #ffffff;
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -172,11 +178,22 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Experience Timeline */
+/* Enhanced Timeline Styles */
 .timeline {
     position: relative;
     max-width: 800px;
     margin: 40px auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(180deg, var(--accent) 0%, var(--primary-light) 100%);
+    border-radius: 2px;
 }
 
 .timeline-item {
@@ -192,6 +209,14 @@ body {
     opacity: 0;
 }
 
+.timeline-item.current {
+    border-left: 4px solid var(--success);
+}
+
+.timeline-item.current::before {
+    background: var(--success);
+}
+
 .timeline-item:nth-child(1) { animation-delay: 0.2s; }
 .timeline-item:nth-child(2) { animation-delay: 0.4s; }
 .timeline-item:nth-child(3) { animation-delay: 0.6s; }
@@ -205,6 +230,59 @@ body {
     height: 20px;
     border-radius: 50%;
     background: var(--accent);
+}
+
+.timeline-item h3 {
+    font-family: var(--font-heading);
+}
+
+.project-branch {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 2px dashed var(--primary-light);
+    position: relative;
+}
+
+.project-branch::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary-light);
+}
+
+.project-branch h5 {
+    font-family: var(--font-heading);
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.project-branch ul {
+    margin-left: 20px;
+}
+
+.project-branch li {
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    font-family: var(--font-primary);
+}
+
+.timeline-item h4 {
+    color: var(--primary);
+    margin: 5px 0;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+}
+
+.duration {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    font-family: var(--font-secondary);
 }
 
 /* Projects Section */
@@ -272,6 +350,7 @@ body {
 }
 
 .contact-cta h2 {
+    font-family: var(--font-heading);
     font-size: 2.5rem;
     margin-bottom: 1rem;
     background: linear-gradient(90deg, #64B6AC, #C0FDFB);
@@ -280,12 +359,14 @@ body {
 }
 
 .contact-cta p {
+    font-family: var(--font-secondary);
     color: #B2B2B2;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
 .contact-button {
+    font-family: var(--font-primary); /* Changed from var(--font-hero) to use Lato */
     display: inline-block;
     padding: 15px 40px;
     background: linear-gradient(90deg, #64B6AC, #5591A9);
@@ -324,6 +405,7 @@ body {
 
 /* Footer */
 footer {
+    font-family: var(--font-secondary);
     background: var(--primary-color);
     color: var(--white);
     padding: 40px 0;
@@ -373,6 +455,7 @@ html {
 
 /* Updated Section Headers */
 .section h2 {
+    font-family: var(--font-heading);
     position: relative;
     margin-bottom: 40px;
     padding-bottom: 15px;

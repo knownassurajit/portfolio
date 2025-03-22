@@ -1,0 +1,79 @@
+# Surajit Das
+## Professional Profile
+
+## Contact Information
+- Phone: +91 8670043341
+- Email: isurajit123@gmail.com
+- LinkedIn: linkedin.com/in/knownassurajit
+- Portfolio: knownassurajit.github.io/portfolio
+
+## Professional Experience
+
+### Database Engineer
+**Adapt Ready** (Nov 2021 – Present)
+- Led database development and optimization tasks
+- Automated database backup processes using Bash scripts
+- Conducted data cleaning and visualization initiatives
+
+### PL/SQL Developer
+**Tata Consultancy Services (TCS) Limited** (Oct 2021 – Nov 2023)
+
+*TCS BaNCS (BFSI domain)*
+- Advanced PL/SQL development, query tuning, and performance optimization
+- Database migration and regulatory compliance for BFSI projects
+- System performance optimization and cross-functional team collaboration
+
+*GE Renewables*
+- PostgreSQL development and data analysis for business process optimization
+- Delivered insights to improve operational efficiency
+- Designed and maintained databases ensuring accuracy and accessibility
+
+*Walmart Global Tech India*
+- PL/SQL backend development, error handling, and CI/CD integration
+- Unit testing, debugging, and query optimization
+
+### Backend Engineer
+**Wipro Limited** (May 2021 – Oct 2021)
+*Alight Solutions*
+- PL/SQL development and database management
+- Focused on security, scalability, and system performance
+
+## Key Accomplishments
+- **Cloud Migration:** Migrated data from PostgreSQL to Oracle, improving performance by 25% and reducing storage costs by 20%
+- **PL/SQL Query Optimization:** Applied dynamic queries and tuning to significantly reduce execution times
+- **Automation:** Automated daily database backups, cutting manual effort by 80%
+- **Agile Delivery:** Consistently delivered projects efficiently using Agile methodologies
+
+## Technical Skills
+- **Languages:** PL/SQL, Python, Bash
+- **UI/UX Tools:** Figma, Adobe XD, Sketch
+- **DevOps:** CI/CD, version control (Git)
+- **Databases:** Oracle DB, PostgreSQL
+
+## Certifications
+- Google UX Design Professional Certificate (Google)
+- Machine Learning (Stanford University)
+- Google IT Support Professional Certificate (Google)
+- Introduction to Cybersecurity Tools & Cyber Attacks (IBM)
+- Python Programming (University of Michigan)
+
+## Education
+- **B.Tech - Computer Science Engineering**, University of Engineering & Management, Jaipur (2017 – 2021)
+- **Higher Secondary - Computer Science**, Umesh Chandra Basuhara Vidyalaya, Malda (2011 – 2017)
+- **Secondary - Science**, Harishchandrapur High School, Malda (2009 – 2010)
+
+## Projects
+- **Facial Expression Recognition:** Model building and evaluation
+- **Calculator Application:** Logic implementation with error handling
+- **Limit Order Book for Trading:** Order matching logic and data structures
+- **Portfolio Website:** UI design, CMS, and Git-based version control
+
+## Observations
+- Strong in database engineering and backend development
+- Practical experience in automation and scripting
+- Balanced exposure to UI/UX design, ML fundamentals, and DevOps
+- Potential areas for growth: Cloud-native tools (Docker/Kubernetes) and advanced MLOps workflows
+
+---
+End of document.
+
