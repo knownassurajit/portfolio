@@ -12,8 +12,40 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add Material Design Web Components -->
+    <script src="https://unpkg.com/@material/mwc-ripple?module" type="module"></script>
+    <script src="https://unpkg.com/@material/mwc-button?module" type="module"></script>
+    <script src="https://unpkg.com/@material/mwc-icon-button?module" type="module"></script>
+    <script>
+        // Theme switching functionality
+        function initTheme() {
+            const theme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+            updateThemeIcon(theme);
+        }
+
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        }
+
+        function updateThemeIcon(theme) {
+            const icon = document.getElementById('theme-icon');
+            icon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
+        }
+
+        // Initialize theme on page load
+        document.addEventListener('DOMContentLoaded', initTheme);
+    </script>
 </head>
 <body>
+    <mwc-icon-button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <i class="material-icons" id="theme-icon">dark_mode</i>
+    </mwc-icon-button>
     <!-- Header Section -->
     <header class="hero">
         <div class="container">
@@ -122,6 +154,7 @@
             <h2>Featured Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
+                    <mwc-ripple></mwc-ripple>
                     <div class="tech-icons">
                         <i class="fab fa-aws"></i>
                         <i class="fas fa-database"></i>
@@ -131,11 +164,13 @@
                     <div class="tech-stack">AWS • Oracle • PostgreSQL</div>
                 </div>
                 <div class="project-card">
+                    <mwc-ripple></mwc-ripple>
                     <h3>Facial Expression Recognition</h3>
                     <p>ML-powered system achieving 95% accuracy in emotion detection</p>
                     <div class="tech-stack">Python • TensorFlow • OpenCV</div>
                 </div>
                 <div class="project-card">
+                    <mwc-ripple></mwc-ripple>
                     <h3>Limit Order Book System</h3>
                     <p>High-performance trading system handling 1000+ transactions per second</p>
                     <div class="tech-stack">C++ • Redis • PostgreSQL</div>
@@ -185,7 +220,13 @@
         <div class="container">
             <h2>Have a database or design challenge?</h2>
             <p>Let's discuss your next project</p>
-            <a href="mailto:isurajit123@gmail.com" class="contact-button">Contact Me</a>
+            <mwc-button 
+                raised
+                label="Contact Me"
+                class="contact-button"
+                onclick="window.location.href='mailto:isurajit123@gmail.com'">
+                <span class="material-icons" slot="icon">mail</span>
+            </mwc-button>
         </div>
     </section>
 
