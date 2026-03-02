@@ -405,7 +405,7 @@ body {
 /* Footer */
 footer {
     font-family: var(--font-secondary);
-    background: var(--primary-color);
+    background: var(--primary);
     color: var(--white);
     padding: 40px 0;
     text-align: center;
