@@ -17,8 +17,8 @@ This project is built using modern web technologies and design principles. Below
 - <span style="color: #E64A19;">**HTML5**</span>: For structuring the content of the website.
 - <span style="color: #0097A7;">**CSS3**</span>: For styling the website, including layout, colors, and fonts.
 - <span style="color: #FFA000;">**JavaScript**</span>: For adding interactivity to the website.
-- <span style="color: #7B1FA2;">**jQuery**</span>: A fast, small, and feature-rich JavaScript library.
-- <span style="color: #C2185B;">**Sass**</span>: A preprocessor scripting language that is interpreted or compiled into CSS.
+- <span style="color: #7B1FA2;">**Vanilla JavaScript**</span>: Interactive behavior is implemented without jQuery.
+- <span style="color: #C2185B;">**CSS (no Sass build step)**</span>: Styling is authored directly in CSS.
 - <span style="color:rgb(1, 146, 213);">**Font Awesome**</span>: For adding scalable vector icons.
 - <span style="color: #00897B;">**Google Fonts**</span>: For custom fonts used in the website.
 

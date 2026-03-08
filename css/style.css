@@ -11,8 +11,8 @@
     /* Matte color palette */
     --primary: #5B6B8C;         /* Matte blue */
     --primary-light: #8494B2;
-    --primary-dark: #3D4A66;
     --surface: #FFFFFF;
+    --white: #FFFFFF;
     --background: #F4F6F8;
     --text-primary: #2C3138;
     --text-secondary: #666D75;
@@ -993,7 +993,7 @@ body {
 /* Footer */
 footer {
     font-family: var(--font-secondary);
-    background: var(--primary-color);
+    background: var(--primary);
     color: var(--white);
     padding: 40px 0;
     text-align: center;
